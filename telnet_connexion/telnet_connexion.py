@@ -8,40 +8,46 @@ server_ip = "10.124.206.68"
 user = "CHATBO"
 password = "1234567890"
 # command = "ZMMO:MSISDN=237669595858:;"
-command = "ZMMO:MSISDN=237663064317:;"
+# command = "ZMMO:MSISDN=237663064317:;"
 
 # server_ip = input('Enter ip : ')
 # user = input('Enter username : ')
 # password = getpass.getpass('Enter password : ')
-# command = input('Enter command : ')
+command = input('Enter command : ')
 
 @asyncio.coroutine
 def shell(reader, writer):
-    inc = 1
-    while inc <= 4:
+    # inc = 1
+    # while inc <= 4:
+    while True:
         # read stream until '?' mark is found
         outp = yield from reader.read(65536)
         if not outp:
             # End of File
             break
-        elif 'ENTER USERNAME' in outp and inc == 1:
+        elif 'ENTER USERNAME' in outp:# and inc == 1:
             writer.write(user)
             writer.write('\n\r' + password + '\n\r' + command + '\n\r')
-            print(inc)
-        inc += 1
+            # print(inc)
+        # inc += 1
         print(outp)
+        print(len(outp))
+        f1 = open(server_ip + ".txt", "w") #server_ip + "_" + str(datetime.now()) +
+        f1.write(outp)
+        f1.close()
+        time.sleep(2)
 
-    print(outp)
-    f1 = open(server_ip + "_" + str(datetime.now()) + ".txt", "w")
-    f2 = f1
-    f1.write(outp)
+    # print(outp)
+    # f1 = open("test1.txt", "w") #server_ip + "_" + str(datetime.now()) +
 
-    f1.close()
+    # f1.write(outp)
+    #
+    # f1.close()
 
     # compter le nombre de caractere du fichier
-    print(len(outp))
+    # print(len(outp))
 
-    time.sleep(5)
+    # time.sleep(5)
 
     # EOF
     # print()
