@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a00b79b-c991-4ce9-84c1-3b2042f65e3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.124.206.68.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/telnet_connexion.py" beforeDir="false" afterPath="$PROJECT_DIR$/telnet_connexion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +22,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1rvlgZqEozp2CPMts9WbAWBTSz1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -29,7 +39,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\NOAH GALLUS\PycharmProjects\telnet_connexion\telnet_connexion\storage" />
+      <recent name="C:\Users\NOAH GALLUS\PycharmProjects\telnet_connexion\telnet_connexion" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NOAH GALLUS\PycharmProjects\telnet_connexion\telnet_connexion" />
+      <recent name="C:\Users\NOAH GALLUS\PycharmProjects\telnet_connexion\telnet_connexion\txt_reader" />
+      <recent name="C:\Users\NOAH GALLUS\PycharmProjects\telnet_connexion\telnet_connexion\telnet_sgsn" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -63,12 +87,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619864555460</updated>
-      <workItem from="1619864694477" duration="5609000" />
+      <workItem from="1619864694477" duration="19108000" />
+      <workItem from="1619891833026" duration="3398000" />
+      <workItem from="1620027673684" duration="35985000" />
+      <workItem from="1620118038810" duration="2576000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

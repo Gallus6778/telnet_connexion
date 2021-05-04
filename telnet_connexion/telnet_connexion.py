@@ -1,18 +1,23 @@
+#!/usr/bin/python
 from datetime import datetime
 import asyncio, telnetlib3
 import getpass
 import time
 
 port = 23
-server_ip = "10.124.206.68"
-user = "CHATBO"
-password = "1234567890"
+# server_ip = "10.124.206.68"
+# user = "CHATBO"
+# password = "1234567890"
+# msisdn = ":MSISDN=237669595858:;"
+# ZMMI = "ZMMI"+msisdn
+# ZMMO = "ZMMO"+msisdn
+# ZMMS = "ZMMS"+msisdn
 # command = "ZMMO:MSISDN=237669595858:;"
 # command = "ZMMO:MSISDN=237663064317:;"
 
-# server_ip = input('Enter ip : ')
-# user = input('Enter username : ')
-# password = getpass.getpass('Enter password : ')
+server_ip = input('Enter ip : ')
+user = input('Enter username : ')
+password = getpass.getpass('Enter password : ')
 command = input('Enter command : ')
 
 @asyncio.coroutine
@@ -28,11 +33,12 @@ def shell(reader, writer):
         elif 'ENTER USERNAME' in outp:# and inc == 1:
             writer.write(user)
             writer.write('\n\r' + password + '\n\r' + command + '\n\r')
+            # writer.write('\n\r' + password + '\n\r' + ZMMI + '\n\r' + ZMMO + '\n\r' + ZMMS + '\n\r')
             # print(inc)
         # inc += 1
         print(outp)
-        print(len(outp))
-        f1 = open(server_ip + ".txt", "w") #server_ip + "_" + str(datetime.now()) +
+        # print(len(outp))
+        f1 = open("tableau2.txt", "w") #server_ip + "_" + str(datetime.now()) +
         f1.write(outp)
         f1.close()
         time.sleep(2)
@@ -51,8 +57,10 @@ def shell(reader, writer):
 
     # EOF
     # print()
+    time.sleep(2)
 
 loop = asyncio.get_event_loop()
 coro = telnetlib3.open_connection(server_ip, 23, shell=shell)
 reader, writer = loop.run_until_complete(coro)
+
 loop.run_until_complete(writer.protocol.waiter_closed)
