@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a00b79b-c991-4ce9-84c1-3b2042f65e3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.124.206.68.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/telnet_connexion.py" beforeDir="false" afterPath="$PROJECT_DIR$/telnet_connexion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/ZMMI_ZMMO_ZMMS_INFO-2021-05-04 11-28-44.946117.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/ZMMI_ZMMO_ZMMS_INFO-2021-05-04 11-30-15.691044.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/test_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/storage/test_file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnet_sgsn/storage/10.124.206.68-2021-05-04 11-28-13.995637.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnet_sgsn/storage/10.124.206.68-2021-05-04 11-28-45.200062.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnet_sgsn/storage/10.124.206.68-2021-05-04 11-30-15.722292.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/telnet_sgsn/zmmi_zmmo_zmms_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/telnet_sgsn/zmmi_zmmo_zmms_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xlsx_writer/hello.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../soapproject" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -91,6 +96,10 @@
       <workItem from="1619891833026" duration="3398000" />
       <workItem from="1620027673684" duration="35985000" />
       <workItem from="1620118038810" duration="2576000" />
+      <workItem from="1620235551851" duration="2694000" />
+      <workItem from="1620367784340" duration="2086000" />
+      <workItem from="1620396058956" duration="72000" />
+      <workItem from="1620825909019" duration="2142000" />
     </task>
     <servers />
   </component>

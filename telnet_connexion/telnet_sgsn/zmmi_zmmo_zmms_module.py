@@ -15,7 +15,7 @@ class zmmi_zmmo_zmms_class:
         self.ZMMI = "ZMMI:MSISDN="
         self.ZMMO = "ZMMO:MSISDN="
         self.ZMMS = "ZMMS:MSISDN="
-        self.file_name = os.path.join('telnet_sgsn/storage', self.server_ip+ '-' + str(datetime.now()).replace(':', '-') + '.txt')
+        self.file_name = os.path.join('storage', self.server_ip+ '-' + str(datetime.now()).replace(':', '-') + '.txt')
 
         f1 = open(self.file_name, "w")
         f1.close()
@@ -27,30 +27,44 @@ class zmmi_zmmo_zmms_class:
     @asyncio.coroutine
     def shell(self, reader, writer):
         # MSISDN = msisdn_to_send()
+        inc = 1
         while True:
             outp = yield from reader.read(65536)
-            if not outp:
+            if outp == "":
+                print('enter')
                 # End of File
                 break
             elif 'ENTER USERNAME' in outp:
                 writer.write(self.user)
                 writer.write('\n\r' + self.password + '\n\r' + self.ZMMI + self.MSISDN + ':;\n\r' + self.ZMMO + self.MSISDN + ':;\n\r' + self.ZMMS + self.MSISDN + ':;\n\r')
-            # print(outp)
             f1 = open(self.file_name, "a")  # server_ip + "_" + str(datetime.now()) +
             f1.write(outp)
             f1.close()
+            if "COMMAND" in outp:
+                print(inc)
+                if inc == 3:
+                    print('End exe')
+                    break
+            #     inc += 1
+            # print(outp)
+            # print(inc)
+            # inc += 1
             time.sleep(2)
 
         time.sleep(2)
 
     def main(self):
         loop = asyncio.get_event_loop()
+
         coro = telnetlib3.open_connection(self.server_ip, 23, shell=self.shell)
         reader, writer = loop.run_until_complete(coro)
+        print('debut-fin')
+
         loop.run_until_complete(writer.protocol.waiter_closed)
         file_name = self.file_name
-        return file_name
+        # return file_name
 
 if __name__ == '__main__':
-    zmmi_zmmo_zmms = zmmi_zmmo_zmms_class('237669595858')
+    zmmi_zmmo_zmms = zmmi_zmmo_zmms_class('237663744490')
     zmmi_zmmo_zmms.main()
+    print("fin")

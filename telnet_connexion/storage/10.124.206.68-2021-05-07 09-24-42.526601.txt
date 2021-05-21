@@ -28,7 +28,7 @@ ENTER USERNAME <  CHATBO
 
 ENTER PASSWORD <  **********
 
-SGSN      YASG01                    2021-05-04  10:28:49
+SGSN      YASG01                    2021-05-07  08:24:46
 
 
 
@@ -56,27 +56,18 @@ MAIN LEVEL COMMAND <___>
 
 LOADING PROGRAM VERSION 13.16-0
 
-SGSN      YASG01                    2021-05-04  10:28:49
+SGSN      YASG01                    2021-05-07  08:24:46
 
         SUBSCRIBER STATE INFORMATION:
 
         INTERNATIONAL MOBILE SUBSCRIBER IDENTITY ...... 624042747827156 
         MOBILE SUBSCRIBER INTERNATIONAL ISDN NUMBER ... 237669595858    
-        PACKET TEMPORARY MOBILE SUBSCRIBER IDENTITY ... DC28DB0CH
+        PACKET TEMPORARY MOBILE SUBSCRIBER IDENTITY ... E630F4A3H
         RADIO ACCESS TYPE ............................. UTRAN
-        MM STATE ...................................... CONNECTED     
+        MM STATE ...................................... IDLE          
         INTERNAL STATE ................................ 10H / PDP ACT       
         CONTROL PLANE PAPU UNIT INDEX ................. 3
         GN SGSN ADDRESS FOR SIGNALLING (IPV4) ......... 041.244.252.006
-
-        PDP CONTEXTS:
-
-        TRANSACTION ID ................................ 00H
-        CONTEXT ID .................................... 01H
-        PDP STATE ..................................... ACTIVE          
-        GCNFIL RECORD INDEX ........................... 2B54H
-        GN SGSN ADDRESS FOR USER TRAFFIC (IPV4) ....... 041.244.252.009
-        IU SGSN ADDRESS FOR USER TRAFFIC (IPV4) ....... 010.124.109.005
 
 COMMAND EXECUTED
 
@@ -86,7 +77,7 @@ VISITING GPRS SUBSCRIBER DATA HANDLING COMMAND <MM_>
 
 LOADING PROGRAM VERSION 13.16-0
 
-SGSN      YASG01                    2021-05-04  10:28:49
+SGSN      YASG01                    2021-05-07  08:24:46
 
         SUBSCRIBER INFORMATION:
 
@@ -99,18 +90,18 @@ SGSN      YASG01                    2021-05-04  10:28:49
         SUBS ACCESS CAPABILITY (HLR PROFILE) .......... GPRS ONLY
         LA MOBILE COUNTRY CODE ........................ 624
         LA MOBILE NETWORK CODE ........................ 04 
-        LOCATION AREA CODE ............................ 7725H/30501D
-        SERVICE AREA CODE ............................. 29D2H/10706D
+        LOCATION AREA CODE ............................ 7726H/30502D
+        SERVICE AREA CODE ............................. 3670H/13936D
         ROUTING AREA CODE ............................. 01H/001D
         CELL IDENTITY ................................. 00000D
         DRX PARAMETER
-          SPLIT PG CYCLE CODE ......................... 10 
-          NON DRX TIMER ...............................  0
+          SPLIT PG CYCLE CODE ......................... 4  
+          NON DRX TIMER ...............................  4
           SPLIT ON CCCH ............................... N
         NETWORK CAPABILITY
-          CIPHERING ALGORITHM ......................... GEA2
-          SM CAPABILITIES VIA DEDICATED CHANNELS ...... Y
-          SM CAPABILITIES VIA GPRS CHANNELS ........... Y
+          CIPHERING ALGORITHM ......................... NOT USED
+          SM CAPABILITIES VIA DEDICATED CHANNELS ...... N
+          SM CAPABILITIES VIA GPRS CHANNELS ........... N
           UCS2 SUPPORT ................................ Y
           SS SCREENING INDICATOR ...................... 1  
         GPRS DETACH FLAG .............................. OFF
@@ -139,7 +130,7 @@ VISITING GPRS SUBSCRIBER DATA HANDLING COMMAND <MM_>
 
 LOADING PROGRAM VERSION 13.16-0
 
-SGSN      YASG01                    2021-05-04  10:28:49
+SGSN      YASG01                    2021-05-07  08:24:46
 
    IMSI ... INTERNATIONAL MOBILE SUBSCRIBER IDENTITY ...... 624042747827156 
 

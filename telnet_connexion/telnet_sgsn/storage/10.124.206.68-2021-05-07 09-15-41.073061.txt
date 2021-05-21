@@ -28,7 +28,7 @@ ENTER USERNAME <  CHATBO
 
 ENTER PASSWORD <  **********
 
-SGSN      YASG01                    2021-05-04  10:30:19
+SGSN      YASG01                    2021-05-07  08:15:44
 
 
 
@@ -51,67 +51,58 @@ SGSN      YASG01                    2021-05-04  10:30:19
 
 
 MAIN LEVEL COMMAND <___>
-<  ZMMI:MSISDN=237669595858:;
+<  ZMMI:MSISDN=237663744490:;
 
 
 LOADING PROGRAM VERSION 13.16-0
 
-SGSN      YASG01                    2021-05-04  10:30:19
+SGSN      YASG01                    2021-05-07  08:15:45
 
         SUBSCRIBER STATE INFORMATION:
 
-        INTERNATIONAL MOBILE SUBSCRIBER IDENTITY ...... 624042747827156 
-        MOBILE SUBSCRIBER INTERNATIONAL ISDN NUMBER ... 237669595858    
-        PACKET TEMPORARY MOBILE SUBSCRIBER IDENTITY ... DC28DB0CH
+        INTERNATIONAL MOBILE SUBSCRIBER IDENTITY ...... 624042747312230 
+        MOBILE SUBSCRIBER INTERNATIONAL ISDN NUMBER ... 237663744490    
+        PACKET TEMPORARY MOBILE SUBSCRIBER IDENTITY ... E028FBF4H
         RADIO ACCESS TYPE ............................. UTRAN
-        MM STATE ...................................... CONNECTED     
-        INTERNAL STATE ................................ 10H / PDP ACT       
+        MM STATE ...................................... IDLE          
+        INTERNAL STATE ................................ 06H / RAU           
         CONTROL PLANE PAPU UNIT INDEX ................. 3
         GN SGSN ADDRESS FOR SIGNALLING (IPV4) ......... 041.244.252.006
-
-        PDP CONTEXTS:
-
-        TRANSACTION ID ................................ 00H
-        CONTEXT ID .................................... 01H
-        PDP STATE ..................................... ACTIVE          
-        GCNFIL RECORD INDEX ........................... 2B54H
-        GN SGSN ADDRESS FOR USER TRAFFIC (IPV4) ....... 041.244.252.009
-        IU SGSN ADDRESS FOR USER TRAFFIC (IPV4) ....... 010.124.109.005
 
 COMMAND EXECUTED
 
 
 VISITING GPRS SUBSCRIBER DATA HANDLING COMMAND <MM_>
-<  ZMMO:MSISDN=237669595858:;
+<  ZMMO:MSISDN=237663744490:;
 
 LOADING PROGRAM VERSION 13.16-0
 
-SGSN      YASG01                    2021-05-04  10:30:19
+SGSN      YASG01                    2021-05-07  08:15:45
 
         SUBSCRIBER INFORMATION:
 
-        INTERNATIONAL MOBILE SUBSCRIBER IDENTITY ...... 624042747827156 
-        MOBILE SUBSCRIBER INTERNATIONAL ISDN NUMBER ... 237669595858    
+        INTERNATIONAL MOBILE SUBSCRIBER IDENTITY ...... 624042747312230 
+        MOBILE SUBSCRIBER INTERNATIONAL ISDN NUMBER ... 237663744490    
         SERVING SMMU UNIT INDEX ....................... 01
         NETWORK ACCESS MODE ........................... BOTH GSM AND GPRS
         RADIO ACCESS TYPE ............................. UTRAN
-        TERMINAL TYPE ................................. UMTS
+        TERMINAL TYPE ................................. GPRS AND UMTS
         SUBS ACCESS CAPABILITY (HLR PROFILE) .......... GPRS ONLY
         LA MOBILE COUNTRY CODE ........................ 624
         LA MOBILE NETWORK CODE ........................ 04 
         LOCATION AREA CODE ............................ 7725H/30501D
-        SERVICE AREA CODE ............................. 29D2H/10706D
+        SERVICE AREA CODE ............................. 271DH/10013D
         ROUTING AREA CODE ............................. 01H/001D
         CELL IDENTITY ................................. 00000D
         DRX PARAMETER
-          SPLIT PG CYCLE CODE ......................... 10 
-          NON DRX TIMER ...............................  0
+          SPLIT PG CYCLE CODE ......................... 8  
+          NON DRX TIMER ...............................  2
           SPLIT ON CCCH ............................... N
         NETWORK CAPABILITY
-          CIPHERING ALGORITHM ......................... GEA2
+          CIPHERING ALGORITHM ......................... GEA3
           SM CAPABILITIES VIA DEDICATED CHANNELS ...... Y
           SM CAPABILITIES VIA GPRS CHANNELS ........... Y
-          UCS2 SUPPORT ................................ Y
+          UCS2 SUPPORT ................................ N
           SS SCREENING INDICATOR ...................... 1  
         GPRS DETACH FLAG .............................. OFF
         MOBILE NOT REACHABLE FOR GPRS FLAG (MNRG)...... OFF
@@ -122,7 +113,7 @@ SGSN      YASG01                    2021-05-04  10:30:19
         ROAMING RESTRICTED............................. N
         CHARGING CHARACTERISTICS....................... 0100
         HLR-ADDRESS
-          GLOBAL TITLE ................................ 237660009002      
+          GLOBAL TITLE ................................ 237660009001      
           NUMBERING PLAN .............................. E.164           
           NATURE OF ADDRESS ........................... INT             
         VLR-ADDRESS ................................... NO ASSOCIATION
@@ -135,13 +126,13 @@ COMMAND EXECUTED
 
 
 VISITING GPRS SUBSCRIBER DATA HANDLING COMMAND <MM_>
-<  ZMMS:MSISDN=237669595858:;
+<  ZMMS:MSISDN=237663744490:;
 
 LOADING PROGRAM VERSION 13.16-0
 
-SGSN      YASG01                    2021-05-04  10:30:19
+SGSN      YASG01                    2021-05-07  08:15:45
 
-   IMSI ... INTERNATIONAL MOBILE SUBSCRIBER IDENTITY ...... 624042747827156 
+   IMSI ... INTERNATIONAL MOBILE SUBSCRIBER IDENTITY ...... 624042747312230 
 
 
    OPERATOR DETERMINED BARRING DATA:
